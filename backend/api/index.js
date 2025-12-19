@@ -23,10 +23,9 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3000;
 const allowedOrigins = [
-  // "http://localhost:5000",
-  "http://localhost:5173",
   "https://frontendcommunity-9ybx.vercel.app",
   "https://indian-community-beta.vercel.app/",
+  "https://vercel.com/shreya-idles-projects/grownity-deployment-jamv/Fgjuz2m3qXe4QuAYu5eDRAA6SAgt",
 ];
 
 const corsOptions = {
