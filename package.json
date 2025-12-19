@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "cd Frontend && npm install && npm run build"
+  },
   "dependencies": {
     "react-scripts": "^5.0.1"
   },
