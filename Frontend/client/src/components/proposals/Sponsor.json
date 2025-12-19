@@ -1,0 +1,111 @@
+{
+  "formId": "sponsor_form",
+  "title": "Sponsorship Form",
+  "description": "Fill this form to express interest in sponsoring the event.",
+  "endpoint": "/api/sponsors",
+  "method": "POST",
+
+  "fields": [
+    {
+      "name": "name",
+      "label": "Your Name",
+      "type": "text",
+      "placeholder": "Your full name",
+      "required": true
+    },
+    {
+      "name": "designation",
+      "label": "Designation / Role",
+      "type": "text",
+      "placeholder": "e.g., Marketing Manager",
+      "required": true
+    },
+    {
+      "name": "linkedin",
+      "label": "What is your LinkedIn profile?",
+      "type": "url",
+      "placeholder": "https://www.linkedin.com/in/your-profile",
+      "required": true,
+      "validation": {
+        "regex": "^https?://.*$",
+        "message": "Enter a valid URL (include http:// or https://)."
+      }
+    },
+    {
+      "name": "website",
+      "label": "Company Website / Social Link",
+      "type": "url",
+      "placeholder": "https://yourcompany.com",
+      "required": true,
+      "validation": {
+        "regex": "^https?://.*$",
+        "message": "Enter a valid URL (include http:// or https://)."
+      }
+    },
+
+    {
+      "name": "sponsorshipLevel",
+      "label": "Sponsorship Level Interested In",
+      "type": "select",
+      "options": ["Platinum", "Gold", "Silver", "Bronze", "Custom"],
+      "required": true
+    },
+
+    {
+      "name": "branding",
+      "label": "What kind of branding or activation are you interested in?",
+      "type": "textarea",
+      "placeholder": "Describe the activation, booth, speaking slot, swag, etc.",
+      "required": false
+    },
+
+    {
+      "name": "budgetRange",
+      "label": "Budget Range",
+      "type": "select",
+      "options": [
+        "< ₹50,000",
+        "₹50,000 - ₹1,00,000",
+        "₹1,00,000 - ₹5,00,000",
+        "> ₹5,00,000"
+      ],
+      "required": true
+    },
+
+    {
+      "name": "expectations",
+      "label": "What do you expect from this sponsorship?",
+      "type": "textarea",
+      "placeholder": "e.g., brand visibility, speaking slot, lead generation",
+      "required": false
+    },
+
+    {
+      "name": "heardFrom",
+      "label": "How did you hear about this opportunity?",
+      "type": "select",
+      "options": [
+        "WhatsApp / Telegram Group",
+        "LinkedIn / Instagram",
+        "Partner",
+        "Community",
+        "Friend / Colleague",
+        "Other"
+      ],
+      "required": true
+    },
+
+    {
+      "name": "heardFromOther",
+      "label": "Please specify",
+      "type": "text",
+      "placeholder": "Specify if selected 'Other'",
+      "visibleIf": {
+        "heardFrom": "Other"
+      },
+      "requiredIf": {
+        "heardFrom": "Other"
+      }
+    }
+  ]
+}

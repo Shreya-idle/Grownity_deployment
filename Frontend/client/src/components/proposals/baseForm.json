@@ -1,0 +1,41 @@
+{
+  "title": "Base Form",
+  "fields": [
+    {
+      "label": "Name",
+      "name": "name",
+      "type": "text",
+      "placeholder": "Your Name",
+      "required": true
+    },
+    {
+      "label": "Email",
+      "name": "email",
+      "type": "email",
+      "placeholder": "you@email.com",
+      "required": true
+    },
+    {
+      "label": "Phone Number",
+      "name": "phone",
+      "type": "text",
+      "placeholder": "+91 81234 56789",
+      "required": true
+    },
+    {
+      "label": "City / Location",
+      "name": "city",
+      "type": "select",
+      "options": ["Delhi", "Mumbai", "Bangalore", "Hyderabad", "Other"],
+      "placeholder": "Select an option",
+      "required": true
+    },
+    {
+      "label": "Organization / Institution / Startup Name",
+      "name": "organization",
+      "type": "text",
+      "placeholder": "Your organization name",
+      "required": true
+    }
+  ]
+}

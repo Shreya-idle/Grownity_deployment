@@ -1,0 +1,61 @@
+{
+  "form": {
+    "title": "Volunteer",
+    "fields": [
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Your full name"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "placeholder": "you@example.com"
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "text",
+        "required": true,
+        "placeholder": "Your phone number"
+      },
+      {
+        "name": "city",
+        "label": "City / Location",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "organization",
+        "label": "Organization / Institution / Startup Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "linkedin",
+        "label": "LinkedIn / Portfolio / Website",
+        "type": "url",
+        "required": true
+      },
+      {
+        "name": "preferredRole",
+        "label": "Preferred Role",
+        "type": "select",
+        "required": true,
+        "options": [
+          "Operations",
+          "Design",
+          "Social Media",
+          "Sponsorship Outreach",
+          "Tech",
+          "Content",
+          "Other"
+        ]
+      }
+    ]
+  }
+}

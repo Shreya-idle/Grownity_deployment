@@ -1,0 +1,47 @@
+{
+  "title": "Community Partner Form",
+  "fields": [
+    {
+      "label": "Community Size / Reach ?",
+      "name": "communitySize",
+      "type": "text",
+      "placeholder": "e.g., 1000 members",
+      "required": true
+    },
+    {
+      "label": "Target Audience / Focus Area ?",
+      "name": "targetAudience",
+      "type": "text",
+      "placeholder": "e.g., Students, Developers, etc.",
+      "required": true
+    },
+    {
+      "label": "What value can your community bring to SHIFT2025?",
+      "name": "valueProposition",
+      "type": "textarea",
+      "placeholder": "Describe the value your community can bring",
+      "required": true
+    },
+    {
+      "label": "What kind of visibility or partnership benefits would you expect?",
+      "name": "expectedBenefits",
+      "type": "textarea",
+      "placeholder": "e.g., Booth, Speaking Slot, etc.",
+      "required": true
+    },
+    {
+      "label": "Community Website / Social Link ?",
+      "name": "communityWebsite",
+      "type": "text",
+      "placeholder": "https://example.com",
+      "required": true
+    },
+    {
+      "label": "How did you hear about this opportunity?",
+      "name": "referralSource",
+      "type": "text",
+      "placeholder": "e.g., Social Media, Friend, etc.",
+      "required": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Speaker Registration Form",
+  "fields": [
+    {
+      "label": "Designation / Role",
+      "name": "designation",
+      "type": "text",
+      "placeholder": "Your role",
+      "required": true
+    },
+    {
+      "label": "LinkedIn Profile",
+      "name": "linkedin",
+      "type": "text",
+      "placeholder": "https://linkedin.com/in/your-profile",
+      "required": true
+    },
+    {
+      "label": "Topic / Theme You Wish to Speak On",
+      "name": "topic",
+      "type": "text",
+      "placeholder": "Your session topic",
+      "required": true
+    },
+    {
+      "label": "Session Type Preference",
+      "name": "sessionType",
+      "type": "select",
+      "options": ["Workshop", "Talk", "Panel", "Fireside Chat", "Other"],
+      "placeholder": "Select an option",
+      "required": true
+    },
+    {
+      "label": "Brief Description (100–150 words)",
+      "name": "description",
+      "type": "textarea",
+      "placeholder": "Describe your talk",
+      "required": true
+    },
+    {
+      "label": "Audience Level",
+      "name": "audienceLevel",
+      "type": "select",
+      "options": ["Beginner", "Intermediate", "Advanced", "Mixed"],
+      "placeholder": "Select an option",
+      "required": true
+    },
+    {
+      "label": "Why do you want to speak at SHIFT2025?",
+      "name": "reason",
+      "type": "textarea",
+      "placeholder": "Explain your motivation",
+      "required": true
+    },
+    {
+      "label": "Have you spoken at other events before?",
+      "name": "spokenBefore",
+      "type": "select",
+      "options": ["Yes", "No"],
+      "placeholder": "Select an option",
+      "required": true
+    },
+    {
+      "label": "Please share links or past speaking experience",
+      "name": "pastLinks",
+      "type": "textarea",
+      "placeholder": "Share past talks or links",
+      "requiredIf": {
+        "field": "spokenBefore",
+        "equals": "Yes"
+      }
+    },
+    {
+      "label": "How did you hear about this opportunity?",
+      "name": "heardFrom",
+      "type": "select",
+      "options": [
+        "WhatsApp / Telegram",
+        "LinkedIn",
+        "Instagram",
+        "Partner Community",
+        "Friend / Colleague",
+        "Other"
+      ],
+      "placeholder": "Select an option",
+      "required": true
+    }
+  ]
+}
