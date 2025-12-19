@@ -1,0 +1,7 @@
+{
+    "North": ["Chandigarh", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Ladakh", "Punjab", "Rajasthan", "Uttarakhand"],
+    "South": ["Andaman and Nicobar Islands", "Andhra Pradesh", "Karnataka", "Kerala", "Lakshadweep", "Puducherry", "Tamil Nadu", "Telangana"],
+    "East": ["Arunachal Pradesh", "Assam", "Bihar", "Jharkhand", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Odisha", "Sikkim", "Tripura", "West Bengal"],
+    "West": ["Dadra and Nagar Haveli and Daman and Diu", "Goa", "Gujarat", "Maharashtra"],
+    "Central": ["Chhattisgarh", "Delhi", "Madhya Pradesh", "Uttar Pradesh"]
+  }
