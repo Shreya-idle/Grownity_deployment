@@ -91,7 +91,7 @@
     "zod": "^3.24.2",
     "zod-validation-error": "^3.4.0"
   },
-  "Dependencies": {
+  "devDependencies": {
     "@babel/preset-typescript": "^7.28.5",
     "@replit/vite-plugin-cartographer": "^0.3.1",
     "@replit/vite-plugin-dev-banner": "^0.1.1",
