@@ -85,7 +85,7 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
     const fetchUser = async () => {
       try {
         const response = await fetch(
-          "https://indian-community-beta.vercel.app//api/user",
+          "https://indian-community-beta.vercel.app/api/user",
           {
             method: "GET",
             credentials: "include",
@@ -107,7 +107,7 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
     const fetchCommunity = async () => {
       try {
         const response = await fetch(
-          `https://indian-community-beta.vercel.app//api/communities/${id}`
+          `https://indian-community-beta.vercel.app/api/communities/${id}`
         );
         if (!response.ok) {
           throw new Error("Community not found");
@@ -153,7 +153,7 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
 
     try {
       const response = await fetch(
-        "https://indian-community-beta.vercel.app//api/communities/join",
+        "https://indian-community-beta.vercel.app/api/communities/join",
         {
           method: "POST",
           headers: {
@@ -188,7 +188,7 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
 
     try {
       const response = await fetch(
-        "https://indian-community-beta.vercel.app//api/communities/leave",
+        "https://indian-community-beta.vercel.app/api/communities/leave",
         {
           method: "POST",
           headers: {
@@ -435,7 +435,9 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
                             if (navigator.share) {
                               await navigator.share(shareData);
                             } else {
-                              await navigator.clipboard.writeText(window.location.href);
+                              await navigator.clipboard.writeText(
+                                window.location.href
+                              );
                               alert("Link copied to clipboard!");
                             }
                           } catch (err) {

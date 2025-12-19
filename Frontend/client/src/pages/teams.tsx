@@ -40,7 +40,7 @@ export default function TeamsPage() {
     const fetchUsers = async () => {
       try {
         const response = await fetch(
-          "https://indian-community-beta.vercel.app//api/user/all-admin",
+          "https://indian-community-beta.vercel.app/api/user/all-admin",
           {
             credentials: "include",
           }

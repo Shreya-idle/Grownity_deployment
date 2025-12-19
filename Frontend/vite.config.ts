@@ -34,7 +34,7 @@
 //   server: {
 //     proxy: {
 //       '/api': {
-//         target: 'https://indian-community-beta.vercel.app/',
+//         target: 'https://indian-community-beta.vercel.app',
 //         changeOrigin: true,
 //         secure: false,
 //       },
@@ -98,7 +98,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://indian-community-beta.vercel.app//',
+        target: 'https://indian-community-beta.vercel.app/',
         changeOrigin: true,
         secure: false,
       },

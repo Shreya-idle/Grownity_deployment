@@ -72,7 +72,7 @@ export default function Navbar() {
   const fetchUser = useCallback(async () => {
     try {
       const response = await fetch(
-        "https://indian-community-beta.vercel.app//api/user",
+        "https://indian-community-beta.vercel.app/api/user",
         {
           credentials: "include",
         }
@@ -113,13 +113,10 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await fetch(
-        "https://indian-community-beta.vercel.app//api/auth/logout",
-        {
-          method: "POST",
-          credentials: "include",
-        }
-      );
+      await fetch("https://indian-community-beta.vercel.app/api/auth/logout", {
+        method: "POST",
+        credentials: "include",
+      });
       setUser(null);
       localStorage.removeItem("cc_role");
       setLocation("/");

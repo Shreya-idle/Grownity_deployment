@@ -50,7 +50,7 @@ export default function Zones() {
       try {
         setLoading(true);
         const response = await fetch(
-          "https://indian-community-beta.vercel.app//api/communities/stats/zones"
+          "https://indian-community-beta.vercel.app/api/communities/stats/zones"
         );
         if (!response.ok) {
           throw new Error("Failed to fetch zone data");

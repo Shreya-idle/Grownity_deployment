@@ -39,7 +39,7 @@ type Activity = {
 
 const getStats = async (): Promise<DashboardStats> => {
   const res = await fetch(
-    "https://indian-community-beta.vercel.app//api/super_user/stats",
+    "https://indian-community-beta.vercel.app/api/super_user/stats",
     {
       credentials: "include",
     }
@@ -62,7 +62,7 @@ const getStats = async (): Promise<DashboardStats> => {
 
 const getRecentActivity = async (): Promise<Activity[]> => {
   const res = await fetch(
-    "https://indian-community-beta.vercel.app//api/super_user/recent-activity",
+    "https://indian-community-beta.vercel.app/api/super_user/recent-activity",
     {
       credentials: "include",
     }
@@ -136,11 +136,12 @@ export default function AdminDashboard() {
   const quickActions = [
     {
       title: "Manage Proposals",
-      description: "Review and approve volunteer, speaker & sponsor submissions",
+      description:
+        "Review and approve volunteer, speaker & sponsor submissions",
       icon: Gift,
       color: "from-orange-500 to-amber-500",
       bgGradient: "from-orange-50 to-amber-50",
-      count: "-", 
+      count: "-",
       action: () => navigate("/admin/dashboard/proposals"),
     },
     {

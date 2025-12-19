@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 import { v4 as uuidv4 } from 'uuid';
 import mongoose from 'mongoose';
 
-const BASE_URL = 'https://indian-community-beta.vercel.app//api/communities';
+const BASE_URL = 'https://indian-community-beta.vercel.app/api/communities';
 
 // Sample ZoneEnum values (adjust according to your app)
 const zoneEnumValues = [

@@ -47,7 +47,7 @@ const fetchCommunitiesByStatus = async (
   status: string
 ): Promise<Community[]> => {
   const response = await fetch(
-    `https://indian-community-beta.vercel.app//api/communities/${status}`,
+    `https://indian-community-beta.vercel.app/api/communities/${status}`,
     {
       credentials: "include",
     }
@@ -82,7 +82,7 @@ const updateCommunityStatus = async ({
   return { success: true };
 
   const response = await fetch(
-    `https://indian-community-beta.vercel.app//api/communities/${id}`,
+    `https://indian-community-beta.vercel.app/api/communities/${id}`,
     {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },

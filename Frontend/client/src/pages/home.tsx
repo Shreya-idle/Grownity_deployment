@@ -21,7 +21,7 @@ export default function Home() {
     const fetchApprovedCommunities = async () => {
       try {
         const response = await fetch(
-          "https://indian-community-beta.vercel.app//api/communities/approved",
+          "https://indian-community-beta.vercel.app/api/communities/approved",
           {
             credentials: "include",
           }

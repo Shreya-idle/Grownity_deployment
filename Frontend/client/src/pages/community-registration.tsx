@@ -269,7 +269,7 @@ export default function CommunityRegistrationStepper() {
 
     try {
       const response = await fetch(
-        "https://indian-community-beta.vercel.app//api/communities",
+        "https://indian-community-beta.vercel.app/api/communities",
         {
           method: "POST",
           credentials: "include",

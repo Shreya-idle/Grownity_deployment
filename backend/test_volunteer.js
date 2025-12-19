@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-const BASE_URL = 'https://indian-community-beta.vercel.app//api/volunteer'; // Adjust port if needed
+const BASE_URL = 'https://indian-community-beta.vercel.app/api/volunteer'; // Adjust port if needed
 
 async function testVolunteerFlow() {
     console.log('Starting Volunteer Verification...');

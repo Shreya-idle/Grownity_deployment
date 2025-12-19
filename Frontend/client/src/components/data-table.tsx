@@ -433,7 +433,7 @@ export function DataTable({ data }: { data: any[] }) {
     setIsLoading(true);
     try {
       const response = await fetch(
-        "https://indian-community-beta.vercel.app//api/user/send-admin-invite",
+        "https://indian-community-beta.vercel.app/api/user/send-admin-invite",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
