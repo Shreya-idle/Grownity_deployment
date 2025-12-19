@@ -25,7 +25,7 @@ const PORT = process.env.PORT || 3000;
 const allowedOrigins = [
   "https://frontendcommunity-9ybx.vercel.app",
   "https://indian-community-beta.vercel.app/",
-  "https://grownity-deployment-jamv-dcphaw6zx-shreya-idles-projects.vercel.app/",
+  "https://grownity-deployment-jamv.vercel.app/",
 ];
 
 const corsOptions = {
