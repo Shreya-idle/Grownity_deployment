@@ -93,7 +93,7 @@ const fetchCommunities = async (filters: {
       : "filter-search";
 
   const response = await fetch(
-    `https://indian-community-beta.vercel.app/api/communities/${endpoint}?${params}`
+    `http://localhost:3000/api/communities/${endpoint}?${params}`
   );
 
   if (!response.ok) {
@@ -105,7 +105,7 @@ const fetchCommunities = async (filters: {
 const fetchFilterData = async (endpoint: string, query = "") => {
   try {
     const response = await fetch(
-      `https://indian-community-beta.vercel.app/api/${endpoint}${query}`
+      `http://localhost:3000/api/${endpoint}${query}`
     );
     if (!response.ok) {
       return [];

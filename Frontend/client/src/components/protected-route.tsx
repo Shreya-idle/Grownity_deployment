@@ -21,7 +21,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
     const fetchUser = async () => {
       try {
         const response = await fetch(
-          "https://indian-community-beta.vercel.app/api/user",
+          "http://localhost:3000/api/user",
           {
             credentials: "include",
           }
@@ -47,7 +47,7 @@ const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
 
       try {
         const response = await fetch(
-          `https://indian-community-beta.vercel.app/api/communities/${communityId}`
+          `http://localhost:3000/api/communities/${communityId}`
         );
         if (response.ok) {
           const community = await response.json();

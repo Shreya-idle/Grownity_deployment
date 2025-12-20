@@ -58,7 +58,7 @@ export default function ZoneDetail() {
       try {
         const apiZoneId = `${zoneId.toLowerCase()}`;
         const response = await fetch(
-          `https://indian-community-beta.vercel.app/api/communities/zone/${apiZoneId}`
+          `http://localhost:3000/api/communities/zone/${apiZoneId}`
         );
 
         if (!response.ok) {

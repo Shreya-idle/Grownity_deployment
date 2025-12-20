@@ -16,7 +16,7 @@ interface Community {
 
 const searchCommunities = async (query: string): Promise<Community[]> => {
   const response = await fetch(
-    `https://indian-community-beta.vercel.app/api/communities/search?q=${encodeURIComponent(
+    `http://localhost:3000/api/communities/search?q=${encodeURIComponent(
       query
     )}`
   );

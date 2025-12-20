@@ -28,7 +28,7 @@ export default function LoginModal({
       const idToken = await user.getIdToken();
 
       const response = await fetch(
-        "https://indian-community-beta.vercel.app/api/auth/google-login",
+        "http://localhost:3000/api/auth/google-login",
         {
           method: "POST",
           headers: {

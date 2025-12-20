@@ -128,7 +128,7 @@ export default function EditCommunityPage() {
     const fetchCommunity = async () => {
       try {
         const response = await fetch(
-          `https://indian-community-beta.vercel.app/api/communities/${id}`
+          `http://localhost:3000/api/communities/${id}`
         );
         if (response.ok) {
           const data = await response.json();
@@ -200,7 +200,7 @@ export default function EditCommunityPage() {
     setSaving(true);
     try {
       const response = await fetch(
-        `https://indian-community-beta.vercel.app/api/communities/update/${id}`,
+        `http://localhost:3000/api/communities/update/${id}`,
         {
           method: "PATCH",
           headers: {

@@ -21,7 +21,7 @@ const PrivateRoute = ({
       if (checkCommunityAdmin && !baseAuth) {
         try {
           const response = await fetch(
-            "https://indian-community-beta.vercel.app/api/communities/user-communities",
+            "http://localhost:3000/api/communities/user-communities",
             {
               credentials: "include",
             }

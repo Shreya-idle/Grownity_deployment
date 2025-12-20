@@ -26,7 +26,7 @@ export default function Communities() {
       try {
         // This fetches from your backend API
         const response = await fetch(
-          "https://indian-community-beta.vercel.app/api/communities/search",
+          "http://localhost:3000/api/communities/search",
           {}
         );
         if (!response.ok) {

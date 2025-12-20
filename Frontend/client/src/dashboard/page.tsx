@@ -39,7 +39,7 @@ type Activity = {
 
 const getStats = async (): Promise<DashboardStats> => {
   const res = await fetch(
-    "https://indian-community-beta.vercel.app/api/super_user/stats",
+    "http://localhost:3000/api/super_user/stats",
     {
       credentials: "include",
     }
@@ -62,7 +62,7 @@ const getStats = async (): Promise<DashboardStats> => {
 
 const getRecentActivity = async (): Promise<Activity[]> => {
   const res = await fetch(
-    "https://indian-community-beta.vercel.app/api/super_user/recent-activity",
+    "http://localhost:3000/api/super_user/recent-activity",
     {
       credentials: "include",
     }
