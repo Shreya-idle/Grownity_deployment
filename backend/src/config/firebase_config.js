@@ -13,7 +13,7 @@ const configPath = path.join(__dirname, "../../config.yaml");
 const config = yaml.load(fs.readFileSync(configPath, "utf8"));
 
  
-const serviceAccountPath = path.join(__dirname, "../../serviceAccountKey.json");
+const serviceAccountPath = path.join(__dirname, "../../serviceAccountKey.js");
 const serviceAccount = JSON.parse(fs.readFileSync(serviceAccountPath, "utf8"));
 
  
