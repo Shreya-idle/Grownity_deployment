@@ -39,7 +39,7 @@ interface Activity {
 // Helper to fetch stats
 const getStats = async (): Promise<DashboardStats> => {
   const response = await fetch(
-    "http://localhost:3000/api/super_user/stats"
+    "https://indian-community-beta.vercel.app/api/super_user/stats"
   );
   if (!response.ok) {
     throw new Error("Failed to fetch stats");
@@ -50,7 +50,7 @@ const getStats = async (): Promise<DashboardStats> => {
 // Helper to fetch recent activity
 const getRecentActivity = async (): Promise<Activity[]> => {
   const response = await fetch(
-    "http://localhost:3000/api/super_user/recent-activity"
+    "https://indian-community-beta.vercel.app/api/super_user/recent-activity"
   );
   if (!response.ok) {
     throw new Error("Failed to fetch recent activity");

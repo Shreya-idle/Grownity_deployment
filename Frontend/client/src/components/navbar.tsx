@@ -72,7 +72,7 @@ export default function Navbar() {
   const fetchUser = useCallback(async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/user",
+        "https://indian-community-beta.vercel.app/api/user",
         {
           credentials: "include",
         }
@@ -113,7 +113,7 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await fetch("http://localhost:3000/api/auth/logout", {
+      await fetch("https://indian-community-beta.vercel.app/api/auth/logout", {
         method: "POST",
         credentials: "include",
       });

@@ -85,7 +85,7 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
     const fetchUser = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/user",
+          "https://indian-community-beta.vercel.app/api/user",
           {
             method: "GET",
             credentials: "include",
@@ -107,7 +107,7 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
     const fetchCommunity = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/api/communities/${id}`
+          `https://indian-community-beta.vercel.app/api/communities/${id}`
         );
         if (!response.ok) {
           throw new Error("Community not found");
@@ -153,7 +153,7 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/communities/join",
+        "https://indian-community-beta.vercel.app/api/communities/join",
         {
           method: "POST",
           headers: {
@@ -188,7 +188,7 @@ export default function CommunityDetail({ params }: CommunityDetailProps) {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/communities/leave",
+        "https://indian-community-beta.vercel.app/api/communities/leave",
         {
           method: "POST",
           headers: {
